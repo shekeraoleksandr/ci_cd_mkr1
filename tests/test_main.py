@@ -1,5 +1,5 @@
 import pytest
-from main import read_data, sort_by_area, sort_by_population
+from main import sort_by_area, sort_by_population
 
 
 @pytest.fixture()
