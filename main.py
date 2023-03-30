@@ -9,6 +9,11 @@ def sort_by_area(data):
     return sorted_data
 
 
+def sort_by_population(data):
+    sorted_data = sorted(data, key=lambda x: int(x[2]))
+    return sorted_data
+
+
 def print_data(data):
     for row in data:
         print(row)
@@ -19,6 +24,9 @@ def main(file_name):
     sorted_by_area = sort_by_area(data)
     print('Sorted by area: ')
     print_data(sorted_by_area)
+    sorted_by_population = sort_by_population(data)
+    print('Sorted by population')
+    print_data(sorted_by_population)
 
 
 if __name__ == '__main__':
