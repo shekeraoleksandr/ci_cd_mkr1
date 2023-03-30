@@ -8,6 +8,12 @@ def sort_by_area(data):
     sorted_data = sorted(data, key=lambda x: int(x[1]))
     return sorted_data
 
+
+def print_data(data):
+    for row in data:
+        print(row)
+
+
 def main(file_name):
     data = read_data(file_name)
     sorted_by_area = sort_by_area(data)
